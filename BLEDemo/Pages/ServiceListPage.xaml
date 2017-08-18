@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="BLEDemo.ServicesListPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BLEDemo">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:GuidToStringConverter x:Key="GuidConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ListView x:Name="serviceListView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Detail="{Binding Uuid, Converter={StaticResource GuidConverter}}" Text="{Binding Description}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
