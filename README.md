@@ -1,9 +1,7 @@
 # BLEDemo
-BLE demo project
 
+This BLE demo project is a Xamarin.Forms app illustrating how to connect to and read values from a BLE peripheral device  
 
-This is the solution shown at the MNEM meetup on 8/17/17
-
-It uses the ACR Reactive BluetoothLE Plugin for Xamarin and Windows
+It uses the ACR Reactive BluetoothLE Plugin for Xamarin and Windows. 
 https://github.com/aritchie/bluetoothle
 
